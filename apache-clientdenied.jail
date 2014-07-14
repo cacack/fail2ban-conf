@@ -1,0 +1,8 @@
+[apache-clientdenied]
+# ban clients who try to access to forbidden places
+enabled  = true 
+port     = http,https
+filter   = apache-clientdenied
+logpath  = /var/log/apache*/*error.log
+maxretry = 1
+

@@ -1,0 +1,7 @@
+[apache-nokiddies-2]
+# ban some more script kiddies
+enabled  = true
+port     = http,https
+filter   = apache-nokiddies-2
+logpath  = /var/log/apache*/*error.log
+maxretry = 1
